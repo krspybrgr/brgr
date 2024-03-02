@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pssstt!</title>
+    <link rel="stylesheet" href="stylesheet1.css">
+</head>
+<body>
+    <div>
+   
+        <video style="position: fixed; top: 0; width: 100%; height: 100%; z-index: -1; object-fit: cover;" src="rbh0taebx4x91.mp4" width="100%" height="100%" autoplay loop></video>
+    </div>
+
+
+    <img style="width: 200px; height: 200px; margin-left: 600px; margin-top: 90px;" src="giphy (1).gif" alt="">
+
+  
+    <div class="no">
+        <button style="border-radius: 50px; padding: 10px 20px; position: absolute; margin-top: 200px; margin-left: 850px; background-color: rgba(0, 0, 128, 0.247); color: aliceblue; border-color: aliceblue; font-size: 20px;" class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+    <a href="page2.html">
+        <button style="border-radius: 50px; padding: 10px 20px; position: absolute; margin-top: 200px; margin-left: 600px; background-color: rgba(0, 0, 128, 0.247); color: aliceblue; border-color: aliceblue; font-size: 20px;">yes!</button>
+    </a>
+
+
+    <div class="container">
+        <p class="text"> Welcome! Do u wish 2 continue? :> </p>?</p>
+        <h1 class="note"> (the "no" button will run to you so find it if you can :P) </h1>
+        <h1 class="note"> (scroll harder)</h1>
+    </div>
+
+
+    <script>
+        function nextPage() {
+            window.location.href = "yes.html";
+        }
+        
+        function moveButton() {
+            var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+            var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+            document.getElementById('noButton').style.left = `${x}px`;
+            document.getElementById('noButton').style.top = `${y}px`;
+            
+        }
+    </script> 
+
+</body>
+</html>

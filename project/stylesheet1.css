@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+}
+
+#noButton {
+    position: absolute;
+    margin-left: 150px;
+    transition: 0.5s;
+}
+.container{
+    display: inline-block
+}
+
+.note{
+    font-size: 15px;
+    text-align: center;
+    font-family: monospace;
+    color: rgb(117, 112, 112);
+    margin-left: 350px;
+
+
+}
+
+.text{
+    color: aliceblue;
+    margin-left: 350px;
+    margin-top: px;
+    font-size: 30px;
+    letter-spacing: 10px;
+    font-family: monospace;
+    border-right: 3px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+    typing 4s steps(23),
+    cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {border-color: transparent;}
+}
+
+@keyframes typing {
+    from {width: 0;}
+}
